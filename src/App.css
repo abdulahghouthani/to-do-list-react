@@ -1,11 +1,11 @@
 .App {
   text-align: center;
+  padding: 0px;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-
   font-size: calc(10px + 2vmin);
   color: white;
   text-align: center;
@@ -31,35 +31,39 @@
   background-color: white;
   margin-top: 1%;
 }
+
+.btndel{
+  border-color: #f9f9f9;
+  color: #fbfbfb;
+  background-color: rgb(154, 0, 0);
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 50%;
+}
 .tbl{
-  display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr ;
+  display: flex;
+ flex-direction: column;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 3%;
   border: 1px solid DarkOrange;
   border-radius: 13px; 
   border-spacing: 0;
+  padding-left: 0px !important;
+}
+.tbl1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  padding-left: 0px !important;
+  border-bottom: 1px solid DarkOrange;
+
 }
 .lis{
   list-style-type: none;
   display: inline;
 }
- th,td{
-  border-bottom: 1px solid DarkOrange;
-  padding: 10px; 
-}
-tr:last-child > td {
-  border-bottom: none;
-}
-.Row{
-  display: flex;
 
-  
-  border-bottom: 1px solid DarkOrange;
 
-  justify-content: space-evenly;
-  align-items: center;
-  justify-items: center;
-}
+
 
